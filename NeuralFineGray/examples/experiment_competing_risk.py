@@ -27,7 +27,7 @@ print("Script running experiments on", dataset)
 x, t, e, covariates = datasets.load_dataset(dataset, competing=True)
 
 # Hyperparameters
-max_epochs = 500
+max_epochs = 100
 grid_search = 3
 layers = [[i] * (j + 1) for i in [25, 50] for j in range(4)]
 layers_large = [[i] * (j + 1) for i in [25, 50] for j in range(8)]
